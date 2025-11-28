@@ -18,6 +18,16 @@ def coding():
     return "Coding is for geniuses and makes life way easier"
 def ai():
     return "AI is good for doing work for you but don't use it for school purposes"
+def sun():
+    return "The sun provides energy and light to Earth and life would not exist on Earth without it, sadly"
+def writing():
+    return "Writing is a common form of communication where people read and write, like now"
+def math():
+    return "Math is just a lot of patterns that help with arithmetics and mathematical problems, it is so cool and hard"
+def language():
+    return "Language is a way of writing, there is a way to write in english, spanish, and hindi"
+def home():
+    return "Home is a lovely place where you can do whatever you want, there is nothing like home"
 def get_intent(user_input):
     text=user_input.lower()
     if "hello" in text or "hi" in text:
@@ -36,6 +46,16 @@ def get_intent(user_input):
         return "coding"
     elif "ai" in text:
         return "ai"
+    elif "home" in text:
+        return "home"
+    elif "math" in text:
+        return "math"
+    elif "sun" in text:
+        return "sun"
+    elif "writing" in text:
+        return "writing"
+    elif "language" in text:
+        return "language"
     else:
         return "unknown"
 while True:
@@ -58,5 +78,15 @@ while True:
         print("ChatBuddy: ",ai())
     elif intent=="coding":
         print("ChatBuddy: ",coding())
+    elif intent=="home":
+        print("ChatBuddy: ",home())
+    elif intent=="math":
+        print("ChatBuddy: ",math())
+    elif intent=="writing":
+        print("ChatBuddy:",writing())
+    elif intent=="language":
+        print("ChatBuddy:",language())
+    elif intent=="sun":
+        print("ChatBuddy:",sun())
     else: 
         print("unknown intent",unknown())
