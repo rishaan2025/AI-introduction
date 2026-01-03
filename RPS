@@ -1,0 +1,21 @@
+play=1
+while play==1:
+    import random
+    plmove=int(input("1 for rock, 2 for paper, and 3 for scissors:"))
+    def playgame():
+        aimove=random.randint(0,3)
+        if plmove==1 and aimove==1:
+            print("Tie")
+        if plmove==2 and aimove==2:
+            print("Tie")
+        if plmove==3 and aimove==3:
+            print("Tie")
+        if plmove==1 and aimove==2 or plmove==2 and aimove==3 or plmove==3 and aimove==1:
+            print("you lose")
+        if plmove==2 and aimove==1 or plmove==3 and aimove==2 or plmove==1 and aimove==3:
+            print("you win")
+    playgame()
+    play=int(input("Do you want to play again? if yes, type one or else type 0"))
+
+    
+
